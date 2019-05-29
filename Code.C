@@ -2,22 +2,18 @@
 #include<conio.h>
 #include<process.h>
 #include<dos.h>
-int bs(int ,int );
-long times();
-void mouse();
-void mahalaxmi();
+void ad();
 void Word(int ,int ,char *);
 void num2(int ,int ,char *);
 void numes(int ,int ,char *);
-void wordd(int ,int ,char *);
+void wordpractice(int ,int ,char *);
 void numeric(int ,int ,char *);
-void bbbbbb(int );
+void getpracticelist(int );
 void num1(int ,int ,char *);
-void kite();
+void getname();
 void mainmenu(char *);
-void white(int);
+void alphabaticpractice(int);
 void black(int);
-void fire();
 void About();
 void practice1(char *);
 void practice2(char *);
@@ -26,8 +22,7 @@ void practice4(char *);
 void practice5(char *);
 void practice6(char *);
 void practice7(char *);
-void lbus();
-void ttt();
+void endingscreen();
 //////////////////////////////////////////////////////////////////
 void box2(int a,int b,int x,int y)
 {
@@ -197,11 +192,11 @@ box2(17,15,23-1,6);
 textcolor(LIGHTGREEN);
 
 gotoxy(23+1,7);
-cprintf("¯ Wel-come To The Newest");
+cprintf("Â¯ Wel-come To The Newest");
 gotoxy(23+1,8);
 cprintf("  Key-Board Practice");
 gotoxy(23+1,10);
-cprintf("¯ In Here We have arranged");
+cprintf("Â¯ In Here We have arranged");
 gotoxy(23+1,11);
 cprintf("  some steps as Typewriter");
 gotoxy(23+1,12);
@@ -211,11 +206,11 @@ cprintf("  Speed at 60 Words Per");
 gotoxy(23+1,14);
 cprintf("  Minute in one month");
 gotoxy(23+1,16);
-cprintf("¯ Thanks for Using Typing");
+cprintf("Â¯ Thanks for Using Typing");
 gotoxy(23+1,17);
 cprintf("  Master");
 gotoxy(23+1,19);
-cprintf("¯ Have a nice Day");
+cprintf("Â¯ Have a nice Day");
 textcolor(CYAN);
 textcolor(LIGHTRED);
 box(10,11,4-2+1,8);
@@ -290,7 +285,7 @@ textcolor(GREEN);
 switch(q)
 {
 	case 14:
-	kite();
+	getname();
 	break;
 
 	case 17:
@@ -298,17 +293,17 @@ switch(q)
 	break;
 
 	case 20:
-	ttt();
+	endingscreen();
 	break;
 
 	case 123:
-	mahalaxmi();
+	ad();
 	break;
 
 }
 }
 ///////////////////////////////////////////////////////////////////////
-void bbbbbb(int q)
+void getpracticelist(int q)
 {
 _setcursortype(_NOCURSOR);
 switch(q)
@@ -399,7 +394,7 @@ break;
 }
 
 ///////////////////////////////////////////////////////////////////////
-void kite()
+void getname()
 {
 int q=14,record=0,error=0,name,cd;
 char name2[8];
@@ -519,12 +514,12 @@ while(getch()!='\r')
 		if(q<=14)
 		{
 		q=20;
-		bbbbbb(q);
+		getpracticelist(q);
 		}
 		else
 		{
 		q=q-3;
-		bbbbbb(q);
+		getpracticelist(q);
 		}
 		break;
 
@@ -533,12 +528,12 @@ while(getch()!='\r')
 		if(q>19)
 		{
 		q=14;
-		bbbbbb(q);
+		getpracticelist(q);
 		}
 		else
 		{
 		q=q+3;
-		bbbbbb(q);
+		getpracticelist(q);
 		break;
 
 		default:
@@ -1935,11 +1930,11 @@ else
 	goto bh;
 }
 kj:
-wordd(error,record,name);
+wordpractice(error,record,name);
 
 }
 /////////////////////////////////////////////////////////////
-void wordd(int error,int record,char *name)
+void wordpractice(int error,int record,char *name)
 {
 int a,iii,jjj,kkk;
 char i,pass[6],gh;
@@ -3388,7 +3383,7 @@ for(a=0;a<=5;a++)
 gg:
 i='\0';
 i=getch();
-if(bs(i,a)==1)
+if(backstack(i,a)==1)
 {
 	a--;
 	goto gg;
@@ -3457,7 +3452,7 @@ for(a=0;a<=5;a++)
 jj:
 i='\0';
 i=getch();
-if(bs(i,a)==1)
+if(backstack(i,a)==1)
 {
 	a--;
 	goto jj;
@@ -3528,7 +3523,7 @@ for(a=0;a<=5;a++)
 ll:
 i='\0';
 i=getch();
-if(bs(i,a)==1)
+if(backstack(i,a)==1)
 {
 	a--;
 	goto ll;
@@ -3598,7 +3593,7 @@ for(a=0;a<=5;a++)
 cc:
 i='\0';
 i=getch();
-if(bs(i,a)==1)
+if(backstack(i,a)==1)
 {
 	a--;
 	goto cc;
@@ -3669,7 +3664,7 @@ for(a=0;a<=5;a++)
 bb:
 i='\0';
 i=getch();
-if(bs(i,a)==1)
+if(backstack(i,a)==1)
 {
 	a--;
 	goto bb;
@@ -3739,7 +3734,7 @@ for(a=0;a<=5;a++)
 hh:
 i='\0';
 i=getch();
-if(bs(i,a)==1)
+if(backstack(i,a)==1)
 {
 	a--;
 	goto hh;
@@ -3809,7 +3804,7 @@ for(a=0;a<=5;a++)
 vv:
 i='\0';
 i=getch();
-if(bs(i,a)==1)
+if(backstack(i,a)==1)
 {
 	a--;
 	goto vv;
@@ -3879,7 +3874,7 @@ for(a=0;a<=5;a++)
 nb:
 i='\0';
 i=getch();
-if(bs(i,a)==1)
+if(backstack(i,a)==1)
 {
 	a--;
 	goto nb;
@@ -3949,7 +3944,7 @@ for(a=0;a<=5;a++)
 ol:
 i='\0';
 i=getch();
-if(bs(i,a)==1)
+if(backstack(i,a)==1)
 {
 	a--;
 	goto ol;
@@ -4019,7 +4014,7 @@ for(a=0;a<=5;a++)
 io:
 i='\0';
 i=getch();
-if(bs(i,a)==1)
+if(backstack(i,a)==1)
 {
 	a--;
 	goto io;
@@ -4089,7 +4084,7 @@ for(a=0;a<=5;a++)
 oi:
 i='\0';
 i=getch();
-if(bs(i,a)==1)
+if(backstack(i,a)==1)
 {
 	a--;
 	goto oi;
@@ -4159,7 +4154,7 @@ for(a=0;a<=5;a++)
 qa:
 i='\0';
 i=getch();
-if(bs(i,a)==1)
+if(backstack(i,a)==1)
 {
 	a--;
 	goto qa;
@@ -4229,7 +4224,7 @@ for(a=0;a<=5;a++)
 aq:
 i='\0';
 i=getch();
-if(bs(i,a)==1)
+if(backstack(i,a)==1)
 {
 	a--;
 	goto aq;
@@ -4299,7 +4294,7 @@ for(a=0;a<=5;a++)
 wa:
 i='\0';
 i=getch();
-if(bs(i,a)==1)
+if(backstack(i,a)==1)
 {
 	a--;
 	goto wa;
@@ -4369,7 +4364,7 @@ for(a=0;a<=5;a++)
 aw:
 i='\0';
 i=getch();
-if(bs(i,a)==1)
+if(backstack(i,a)==1)
 {
 	a--;
 	goto aw;
@@ -4439,7 +4434,7 @@ for(a=0;a<=5;a++)
 qw:
 i='\0';
 i=getch();
-if(bs(i,a)==1)
+if(backstack(i,a)==1)
 {
 	a--;
 	goto qw;
@@ -4535,7 +4530,7 @@ for(a=0;a<=5;a++)
 gg:
 i='\0';
 i=getch();
-if(bs(i,a)==1)
+if(backstack(i,a)==1)
 {
 	a--;
 	goto gg;
@@ -4605,7 +4600,7 @@ for(a=0;a<=5;a++)
 jj:
 i='\0';
 i=getch();
-if(bs(i,a)==1)
+if(backstack(i,a)==1)
 {
 	a--;
 	goto jj;
@@ -4676,7 +4671,7 @@ for(a=0;a<=5;a++)
 ll:
 i='\0';
 i=getch();
-if(bs(i,a)==1)
+if(backstack(i,a)==1)
 {
 	a--;
 	goto ll;
@@ -4746,7 +4741,7 @@ for(a=0;a<=5;a++)
 cc:
 i='\0';
 i=getch();
-if(bs(i,a)==1)
+if(backstack(i,a)==1)
 {
 	a--;
 	goto cc;
@@ -4817,7 +4812,7 @@ for(a=0;a<=5;a++)
 bb:
 i='\0';
 i=getch();
-if(bs(i,a)==1)
+if(backstack(i,a)==1)
 {
 	a--;
 	goto bb;
@@ -4887,7 +4882,7 @@ for(a=0;a<=5;a++)
 hh:
 i='\0';
 i=getch();
-if(bs(i,a)==1)
+if(backstack(i,a)==1)
 {
 	a--;
 	goto hh;
@@ -4957,7 +4952,7 @@ for(a=0;a<=5;a++)
 vv:
 i='\0';
 i=getch();
-if(bs(i,a)==1)
+if(backstack(i,a)==1)
 {
 	a--;
 	goto vv;
@@ -5027,7 +5022,7 @@ for(a=0;a<=5;a++)
 nb:
 i='\0';
 i=getch();
-if(bs(i,a)==1)
+if(backstack(i,a)==1)
 {
 	a--;
 	goto nb;
@@ -5097,7 +5092,7 @@ for(a=0;a<=5;a++)
 ol:
 i='\0';
 i=getch();
-if(bs(i,a)==1)
+if(backstack(i,a)==1)
 {
 	a--;
 	goto ol;
@@ -5167,7 +5162,7 @@ for(a=0;a<=5;a++)
 io:
 i='\0';
 i=getch();
-if(bs(i,a)==1)
+if(backstack(i,a)==1)
 {
 	a--;
 	goto io;
@@ -5237,7 +5232,7 @@ for(a=0;a<=5;a++)
 oi:
 i='\0';
 i=getch();
-if(bs(i,a)==1)
+if(backstack(i,a)==1)
 {
 	a--;
 	goto oi;
@@ -5307,7 +5302,7 @@ for(a=0;a<=5;a++)
 qa:
 i='\0';
 i=getch();
-if(bs(i,a)==1)
+if(backstack(i,a)==1)
 {
 	a--;
 	goto qa;
@@ -5377,7 +5372,7 @@ for(a=0;a<=5;a++)
 aq:
 i='\0';
 i=getch();
-if(bs(i,a)==1)
+if(backstack(i,a)==1)
 {
 	a--;
 	goto aq;
@@ -5447,7 +5442,7 @@ for(a=0;a<=5;a++)
 wa:
 i='\0';
 i=getch();
-if(bs(i,a)==1)
+if(backstack(i,a)==1)
 {
 	a--;
 	goto wa;
@@ -5517,7 +5512,7 @@ for(a=0;a<=5;a++)
 aw:
 i='\0';
 i=getch();
-if(bs(i,a)==1)
+if(backstack(i,a)==1)
 {
 	a--;
 	goto aw;
@@ -5587,7 +5582,7 @@ for(a=0;a<=5;a++)
 qw:
 i='\0';
 i=getch();
-if(bs(i,a)==1)
+if(backstack(i,a)==1)
 {
 	a--;
 	goto qw;
@@ -7859,7 +7854,7 @@ else
 }
 }
 ////////////////////////////////////////////////////////////////////////////
-void white(int lt)
+void alphabaticpractice(int lt)
 {
 _setcursortype(_NOCURSOR);
 switch(lt)
@@ -8339,7 +8334,7 @@ clrscr();
 main();
 }
 //////////////////////////////////////////////////////////////////////////
-void ttt()
+void endingscreen()
 {
 
 clrscr();
@@ -8369,7 +8364,7 @@ textcolor(LIGHTRED);
 {
 box(11,21,31,3);
 }
-white(lt);
+alphabaticpractice(lt);
 
 while(getch()!='\r')
 	{
@@ -8379,12 +8374,12 @@ while(getch()!='\r')
 		if(lt<=5)
 		{
 		lt=19;
-		white(lt);
+		alphabaticpractice(lt);
 		}
 		else
 		{
 		lt=lt-2;
-		white(lt);
+		alphabaticpractice(lt);
 		}
 		break;
 
@@ -8393,12 +8388,12 @@ while(getch()!='\r')
 		if(lt>=20)
 		{
 		lt=5;
-		white(lt);
+		alphabaticpractice(lt);
 		}
 		else
 		{
 
-		white(lt);
+		alphabaticpractice(lt);
 		}
 		break;
 
@@ -10021,7 +10016,7 @@ getch();
 }
 }
 ////////////////////////////////////////////////////////////////////////
-void mahalaxmi()
+void ad()
 {
 clrscr();
 _setcursortype(_NOCURSOR);
@@ -10087,7 +10082,7 @@ getch();
 main();
 }
 ////////////////////////////////////////////////////////////////////////
-int bs(int i,int a)
+int backstack(int i,int a)
 {
 	if(a>0 && i==8)
 	{
