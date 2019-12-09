@@ -2,7 +2,7 @@
 
 This project is created to increase the typing speed of user. 
 ![Image not found](https://github.com/VrushankPatel/Typing-master/blob/master/ScreenShots/1.png)
-<br>
+<br><br><br><br><br>
 In this project I have programmed the different practice for different keys and for different purposes like numeric typing speed [0-9] , words practice[all characters], key board practice [A-Z] etc.
 
 The user have to enter his/her name to enter the practice menu.
