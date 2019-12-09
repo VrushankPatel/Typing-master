@@ -1,10 +1,12 @@
 # Typing-master
 
-This project is created to increase the typing speed of user. <br>
+This project is created to increase the typing speed of user. <br><br>
 ![Image not found](https://github.com/VrushankPatel/Typing-master/blob/master/ScreenShots/1.png)
 <br><br>
 In this project I have programmed the different practice for different keys and for different purposes like numeric typing speed [0-9] , words practice[all characters], key board practice [A-Z] etc.
-
+<br><br>
+![Image not found](https://github.com/VrushankPatel/Typing-master/blob/master/ScreenShots/4.png)<br>
+![Image not found](https://github.com/VrushankPatel/Typing-master/blob/master/ScreenShots/5.png)<br><br>
 The user have to enter his/her name to enter the practice menu.
 In here the key-board practice contains 7 different sub-practices which train the user by giving him/her some exercises practices to do.
 
@@ -22,8 +24,7 @@ Here are some screenshots of this program execution.
 
 ![Image not found](https://github.com/VrushankPatel/Typing-master/blob/master/ScreenShots/2.png)
 ![Image not found](https://github.com/VrushankPatel/Typing-master/blob/master/ScreenShots/3.png)
-![Image not found](https://github.com/VrushankPatel/Typing-master/blob/master/ScreenShots/4.png)
-![Image not found](https://github.com/VrushankPatel/Typing-master/blob/master/ScreenShots/5.png)
+
 ![Image not found](https://github.com/VrushankPatel/Typing-master/blob/master/ScreenShots/6.png)
 ![Image not found](https://github.com/VrushankPatel/Typing-master/blob/master/ScreenShots/7.png)
 ![Image not found](https://github.com/VrushankPatel/Typing-master/blob/master/ScreenShots/8.png)
