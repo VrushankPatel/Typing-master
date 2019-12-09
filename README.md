@@ -17,5 +17,14 @@ This practice is programmed because if user complete all the key-board practices
 In here 32 different words are programmed .the user can test the typing speed by note the time taken by him/her to complete the words practice.
 
 You will need the turbo C++ to compile and run this code.
-
+Here are some screenshots of this program execution.
 ![Image not found](https://github.com/VrushankPatel/Typing-master/blob/master/ScreenShots/1.png)
+![Image not found](https://github.com/VrushankPatel/Typing-master/blob/master/ScreenShots/2.png)
+![Image not found](https://github.com/VrushankPatel/Typing-master/blob/master/ScreenShots/3.png)
+![Image not found](https://github.com/VrushankPatel/Typing-master/blob/master/ScreenShots/4.png)
+![Image not found](https://github.com/VrushankPatel/Typing-master/blob/master/ScreenShots/5.png)
+![Image not found](https://github.com/VrushankPatel/Typing-master/blob/master/ScreenShots/6.png)
+![Image not found](https://github.com/VrushankPatel/Typing-master/blob/master/ScreenShots/7.png)
+![Image not found](https://github.com/VrushankPatel/Typing-master/blob/master/ScreenShots/8.png)
+![Image not found](https://github.com/VrushankPatel/Typing-master/blob/master/ScreenShots/9.png)
+![Image not found](https://github.com/VrushankPatel/Typing-master/blob/master/ScreenShots/10.png)
